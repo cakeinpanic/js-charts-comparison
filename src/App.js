@@ -1,10 +1,14 @@
 import React from 'react'
 import './App.css'
-import Amacharts from './amcharts/amcharts'
+import Amacharts from './charts/amcharts'
+import Rechart from './charts/recahrts'
 
 function App() {
   return (
-    <Amacharts/>
+    <>
+    {/*<Amacharts/>*/}
+    <Rechart/>
+    </>
   )
 }
 

@@ -2,37 +2,9 @@ import React, { Component } from 'react'
 import * as am4core from '@amcharts/amcharts4/core'
 import * as am4charts from '@amcharts/amcharts4/charts'
 import am4themes_animated from '@amcharts/amcharts4/themes/animated'
+import { DEFAULT_DATA } from '../data'
 
 am4core.useTheme(am4themes_animated)
-const DATA = [
-  {
-    'country': 'Lithuania',
-    'litres': 501.9
-  }, {
-    'country': 'Czechia',
-    'litres': 301.9
-  }, {
-    'country': 'Ireland',
-    'litres': 201.1
-  }, {
-    'country': 'Germany',
-    'litres': 165.8
-  }, {
-    'country': 'Australia',
-    'litres': 139.9
-  }, {
-    'country': 'Austria',
-    'litres': 128.3
-  }, {
-    'country': 'UK',
-    'litres': 99
-  }, {
-    'country': 'Belgium',
-    'litres': 60
-  }, {
-    'country': 'The Netherlands',
-    'litres': 50
-  }]
 
 class Amacharts extends Component {
   componentDidMount () {
@@ -40,7 +12,7 @@ class Amacharts extends Component {
     var chart = am4core.create('chartdiv', am4charts.PieChart)
 
    // Add data
-    chart.data = DATA
+    chart.data = DEFAULT_DATA
     // Add and configure Series
     var pieSeries = chart.series.push(new am4charts.PieSeries())
     pieSeries.dataFields.value = 'litres'
