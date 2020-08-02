@@ -20,6 +20,21 @@
 * export(?) and SSR for money
 * no offset labels for pie chart 
 
+## anycharts https://www.anychart.com/
+* Paid
+* Great documentation
+* Very customizable
+* Vanilla with react adaptor
+
+
+check:
+https://echarts.apache.org/examples/en/index.html#chart-type-pie
+https://www.koolchart.com/
+https://canvasjs.com/javascript-charts/
+https://www.syncfusion.com/javascript-ui-controls/js-charts
+https://gionkunz.github.io/chartist-js/
+https://github.com/mapbox/mapbox-gl-js
+
 ### Dislike
 Too simple visually: 
 * https://c3js.org/gettingstarted.html#customize
