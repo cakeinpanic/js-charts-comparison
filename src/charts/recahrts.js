@@ -12,7 +12,7 @@ export default class Rechart extends PureComponent {
       <div className="chart-demo">
         <h3>Recharts</h3>
         <PieChart width={400} height={400}>
-          <Pie data={this.data} dataKey="litres" nameKey="country" cx={200} cy={200} innerRadius={70} outerRadius={90} fill="#82ca9d" label="ggg">
+          <Pie data={this.data} dataKey="litres" nameKey="country" cx={200} cy={200} innerRadius={70} outerRadius={90} fill="#82ca9d" label>
             {
               this.data.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={this.colors[index]}/>

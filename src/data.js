@@ -5,22 +5,7 @@ export const DEFAULT_DATA = [
   }, {
     'country': 'Czechia',
     'litres': 301.9
-  }, {
-    'country': 'Ireland',
-    'litres': 201.1
-  }, {
-    'country': 'Germany',
-    'litres': 165.8
-  }, {
-    'country': 'Australia',
-    'litres': 139.9
-  }, {
-    'country': 'Austria',
-    'litres': 128.3
-  }, {
-    'country': 'UK',
-    'litres': 99
-  }, {
+  },{
     'country': 'Belgium',
     'litres': 60
   }, {

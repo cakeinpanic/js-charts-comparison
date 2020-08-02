@@ -4,6 +4,7 @@ import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
 import Rechart from './recahrts'
 import Amacharts from './amcharts'
 import 'react-tabs/style/react-tabs.css';
+import { ChartJS } from './chartjs'
 
 export const AllChartsDemo = () => {
 
@@ -11,16 +12,21 @@ export const AllChartsDemo = () => {
     <div>
       <Tabs>
         <TabList>
+          <Tab>Chartjs</Tab>
           <Tab>Amcharts</Tab>
           <Tab>Recharts</Tab>
-        </TabList>
 
+        </TabList>
+        <TabPanel>
+          <ChartJS/>
+        </TabPanel>
         <TabPanel>
          <Amacharts/>
         </TabPanel>
         <TabPanel>
           <Rechart/>
         </TabPanel>
+
       </Tabs>
     </div>
   )
