@@ -6,7 +6,6 @@
 
 ## recharts
 * Free
-* Hardly customizable(how label list works??)
 * React only
 * svg – SSR
 
