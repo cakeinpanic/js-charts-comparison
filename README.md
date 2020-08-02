@@ -16,6 +16,11 @@
 * there is a react wrapper(can be trusted?)
 * no possibility to add labels to each part
 
+## https://apexcharts.com/react-chart-demos/radialbar-charts/basic/
+* MIT license
+* export(?) and SSR for money
+* no offset labels for pie chart 
+
 ### Dislike
 Too simple visually: 
 * https://c3js.org/gettingstarted.html#customize
