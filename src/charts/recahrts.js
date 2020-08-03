@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { Cell, Legend, Pie, PieChart } from 'recharts'
-import { DEFAULT_DATA } from '../data'
+import { COLORS, DEFAULT_DATA } from '../data'
 import { ProsCons } from './pros-cons'
 
 const RADIAN = Math.PI / 180
@@ -23,7 +23,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 export default class Rechart extends PureComponent {
   data = DEFAULT_DATA
-  colors = ['red', 'green', 'blue', 'yellow', 'lightblue', 'orange', 'pink', 'lightgreen']
+  colors = COLORS
 
   state = {
     opacity: {
@@ -54,8 +54,8 @@ export default class Rechart extends PureComponent {
 
     return (
       <div className="chart-demo">
-        <h3>Recharts</h3>
-        <PieChart width={400} height={400}>
+        <a href="https://recharts.org/" target="_blank"><h3>Recharts</h3></a>
+        <PieChart width={800} height={350}>
           <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}/>
 
           <Pie data={this.data} dataKey="litres" nameKey="country" cx={200} cy={200} innerRadius={70} outerRadius={90} fill="#82ca9d" label={renderCustomizedLabel}>

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import * as am4core from '@amcharts/amcharts4/core'
 import * as am4charts from '@amcharts/amcharts4/charts'
 import am4themes_animated from '@amcharts/amcharts4/themes/animated'
-import { DEFAULT_DATA } from '../data'
+import { COLORS, DEFAULT_DATA } from '../data'
 import { ProsCons } from './pros-cons'
 
 am4core.useTheme(am4themes_animated)
@@ -21,11 +21,8 @@ class Amacharts extends Component {
     pieSeries.dataFields.value = 'litres'
     pieSeries.dataFields.category = 'country'
 
+    pieSeries.colors.list = COLORS.map(c => am4core.color(c))
 
-    pieSeries.colors.list = [
-      am4core.color("red"),
-      am4core.color("yellow")
-    ];
 
     // Let's cut a hole in our Pie chart the size of 40% the radius
     chart.innerRadius = am4core.percent(90)

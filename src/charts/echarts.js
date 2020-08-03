@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactEcharts from 'echarts-for-react'
-import { DEFAULT_DATA } from '../data'
+import { COLORS, DEFAULT_DATA } from '../data'
 
 
 export const ECharts = () => {
@@ -14,7 +14,7 @@ export const ECharts = () => {
       left: 10,
       data: DEFAULT_DATA.map(({ country }) => country)
     },
-    color: ['red', 'green', 'yellow', 'blue'],
+    color: COLORS,
     series: [
       {
         name: 'Chart',

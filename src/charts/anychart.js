@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import AnyChart from 'anychart-react/dist/anychart-react.js'
-import { DEFAULT_DATA } from '../data'
+import { COLORS, DEFAULT_DATA } from '../data'
 import { ProsCons } from './pros-cons'
 
 const cons = ['Paid']
@@ -11,9 +11,6 @@ const pros = [
 ]
 
 export class Anychart extends PureComponent {
-  data = DEFAULT_DATA
-  colors = ['red', 'green', 'blue', 'yellow', 'lightblue', 'orange', 'pink', 'lightgreen']
-
   render () {
     const complexSettings = {
       width: '100%',
@@ -21,15 +18,14 @@ export class Anychart extends PureComponent {
       type: 'pie',
       outsideLabelsOffset: '50%',
       innerRadius: '80%',
-      data: this.data.map(({ litres }) => litres),
+      data: DEFAULT_DATA.map(({ litres }, i) => ({ value: litres, normal: { fill: COLORS[i] } })),
       labels: {
         position: 'outside',
         fontColor: 'black',
-        getLabel: ()=>'123',
         items: DEFAULT_DATA.map(({ country }) => ({text:country})),
       },
       legend: {
-        items: DEFAULT_DATA.map(({ country }) => ({text:country})),
+        items: DEFAULT_DATA.map(({ country }, i) => ({ text: country, fontColor: COLORS[i], iconFill: {color:COLORS[i]} })),
         padding: 0
       }
     }

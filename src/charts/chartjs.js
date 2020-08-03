@@ -1,11 +1,11 @@
 import React from 'react'
 
 import { Doughnut } from 'react-chartjs-2'
-import { DEFAULT_DATA } from '../data'
+import { COLORS, DEFAULT_DATA } from '../data'
 import { ProsCons } from './pros-cons'
 
 const pros = ['Free', 'framework agnostic with a react wrapper']
-const cons = [ 'Hardly customizable', 'canvas', 'react wrapper maintained not by devs of charts itself']
+const cons = ['Hardly customizable(no possibility to add labels to each part)', 'canvas', 'react wrapper maintained not by devs of charts itself']
 
 export const ChartJS = () => {
 // And for a doughnut chart
@@ -16,16 +16,8 @@ export const ChartJS = () => {
       {
         data: DEFAULT_DATA.map(({ litres }) => litres),
         borderWidth: 10,
-        backgroundColor: [
-          '#FF6384',
-          '#36A2EB',
-          '#FFCE56'
-        ],
-        hoverBackgroundColor: [
-          'red',
-          'green',
-          'blue'
-        ]
+        backgroundColor:COLORS,
+        hoverBackgroundColor: COLORS
       }]
   }
 
