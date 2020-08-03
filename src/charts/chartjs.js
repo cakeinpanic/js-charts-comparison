@@ -23,7 +23,7 @@ export const ChartJS = () => {
 
   return (
     <div className="chart-demo">
-      <a href="https://www.chartjs.org/docs/latest/" target="_blank"><h3>Chartjs</h3></a>
+      <a href="https://www.chartjs.org/docs/latest/" target="_blank" rel="noopener noreferrer"><h3>Chartjs</h3></a>
       <Doughnut className="chart" data={data} options={options} height={100} />
       <ProsCons cons={cons} pros={pros}></ProsCons>
     </div>

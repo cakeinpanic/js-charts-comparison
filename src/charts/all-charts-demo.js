@@ -1,13 +1,13 @@
 import React from 'react'
-// with default styles:
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
-import Rechart from './recahrts'
-import Amacharts from './amcharts'
+
 import 'react-tabs/style/react-tabs.css'
-import { ChartJS } from './chartjs'
-import { ApexChart } from './apex'
-import { Anychart } from './anychart'
 import { ECharts } from './echarts'
+import { Anychart } from './anychart'
+import { ApexChart } from './apex'
+import { ChartJS } from './chartjs'
+import Amacharts from './amcharts'
+import Rechart from './recahrts'
 
 export const AllChartsDemo = () => {
 

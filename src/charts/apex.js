@@ -49,7 +49,7 @@ export class ApexChart extends Component {
   render () {
     return (
       <div className="chart-demo">
-        <a href="https://apexcharts.com/javascript-chart-demos/" target="_blank"><h3>Apex charts</h3></a>
+        <a href="https://apexcharts.com/javascript-chart-demos/" target="_blank" rel="noopener noreferrer"><h3>Apex charts</h3></a>
       <div id="chart">
         <ReactApexChart options={this.state.options} series={this.state.series} type={this.state.options.chart.type} height={350}/>
       </div>

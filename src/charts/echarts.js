@@ -47,7 +47,7 @@ export const ECharts = () => {
 
   return (
     <div className="chart-demo">
-      <a href="https://echarts.apache.org/en/index.html" target="_blank"><h3>Echarts</h3></a>
+      <a href="https://echarts.apache.org/en/index.html" target="_blank" rel="noopener noreferrer"><h3>Echarts</h3></a>
     <ReactEcharts
       option={options}
       notMerge={true}
