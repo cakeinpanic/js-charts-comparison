@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactEcharts from 'echarts-for-react'
 import { COLORS, DEFAULT_DATA } from '../data'
+import { ProsCons } from './pros-cons'
+
+const pros = ['Free(apache license)', 'Framework agnostic with a react wrapper(even react native wrapper)', 'wonderful documentation', 'Maintained actively(aug 2020)']
+const cons = ['canvas', 'very customizable']
 
 
 export const ECharts = () => {
@@ -43,10 +47,12 @@ export const ECharts = () => {
 
   return (
     <div className="chart-demo">
+      <a href="https://echarts.apache.org/en/index.html" target="_blank"><h3>Echarts</h3></a>
     <ReactEcharts
       option={options}
       notMerge={true}
       lazyUpdate={true}
     />
+      <ProsCons cons={cons} pros={pros}></ProsCons>
     </div>)
 }

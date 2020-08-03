@@ -1,7 +1,6 @@
 
 
 check:
-https://echarts.apache.org/examples/en/index.html#chart-type-pie
 https://www.koolchart.com/
 https://canvasjs.com/javascript-charts/
 https://www.syncfusion.com/javascript-ui-controls/js-charts
