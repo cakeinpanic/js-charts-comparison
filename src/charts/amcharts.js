@@ -3,8 +3,11 @@ import * as am4core from '@amcharts/amcharts4/core'
 import * as am4charts from '@amcharts/amcharts4/charts'
 import am4themes_animated from '@amcharts/amcharts4/themes/animated'
 import { DEFAULT_DATA } from '../data'
+import { ProsCons } from './pros-cons'
 
 am4core.useTheme(am4themes_animated)
+const pros = ['Very customizable', 'svg – SSR', 'Framework agnostic, has official react wrapper']
+const cons = ['Expensive(with maps even more)', 'Declarative: not nice to read or move from it to another library']
 
 class Amacharts extends Component {
   componentDidMount () {
@@ -45,8 +48,9 @@ class Amacharts extends Component {
   render () {
     return (
       <div className="chart-demo">
-        <h3>Amdocs</h3>
+        <a href="https://www.amcharts.com/" target="_blank"><h3>Amcharts</h3></a>
         <div id="chartdiv" style={{ width: '600px', height: '300px' }}></div>
+        <ProsCons cons={cons} pros={pros}></ProsCons>
       </div>
     )
   }

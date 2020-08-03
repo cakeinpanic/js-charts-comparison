@@ -1,8 +1,13 @@
 import React, { PureComponent } from 'react'
 import { Cell, Legend, Pie, PieChart } from 'recharts'
 import { DEFAULT_DATA } from '../data'
+import { ProsCons } from './pros-cons'
 
 const RADIAN = Math.PI / 180
+
+const pros = ['Free', 'svg – SSR']
+const cons = ['React only', 'Well customizable']
+
 
 const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 2
@@ -59,11 +64,10 @@ export default class Rechart extends PureComponent {
                 <Cell key={`cell-${index}`} fill={this.colors[index]}/>
               ))
             }
-            // why it sous not work?
-
           </Pie>
 
         </PieChart>
+        <ProsCons cons={cons} pros={pros}></ProsCons>
       </div>
     )
   }

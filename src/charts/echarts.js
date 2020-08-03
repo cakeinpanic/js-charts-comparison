@@ -42,9 +42,11 @@ export const ECharts = () => {
   }
 
   return (
+    <div className="chart-demo">
     <ReactEcharts
       option={options}
       notMerge={true}
       lazyUpdate={true}
-    />)
+    />
+    </div>)
 }

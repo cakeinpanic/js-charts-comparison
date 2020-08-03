@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import ReactApexChart from 'react-apexcharts'
 import { DEFAULT_DATA } from '../data'
+import { ProsCons } from './pros-cons'
+
+const pros = ['Free', 'Vanilla with react adaptor']
+const cons = [
+  'Hardly customizable'
+]
 
 export class ApexChart extends Component {
   constructor (props) {
@@ -37,11 +43,13 @@ export class ApexChart extends Component {
 
   render () {
     return (
-
+      <>
+        <a href="https://apexcharts.com/javascript-chart-demos/" target="_blank"><h3>Apex charts</h3></a>
       <div id="chart">
         <ReactApexChart options={this.state.options} series={this.state.series} type={this.state.options.chart.type} height={350}/>
       </div>
-
+        <ProsCons cons={cons} pros={pros}></ProsCons>
+      </>
     )
   }
 }

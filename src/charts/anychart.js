@@ -3,12 +3,13 @@ import AnyChart from 'anychart-react/dist/anychart-react.js'
 import { DEFAULT_DATA } from '../data'
 import { ProsCons } from './pros-cons'
 
-const pros = ['Paid', 'Vanilla with react adaptor']
-const cons = [
+const cons = ['Paid']
+const pros = [
   'Great documentation',
-  'Very customizable'
-
+  'Very customizable',
+  'Vanilla with react adaptor(official?)'
 ]
+
 export class Anychart extends PureComponent {
   data = DEFAULT_DATA
   colors = ['red', 'green', 'blue', 'yellow', 'lightblue', 'orange', 'pink', 'lightgreen']
@@ -33,12 +34,13 @@ export class Anychart extends PureComponent {
       }
     }
     return (
-      <>
+      <div className="chart-demo">
+        <a href=" https://www.anychart.com/" target="_blank"><h3>Anycharts</h3></a>
         <AnyChart
           {...complexSettings}
         />
         <ProsCons pros={pros} cons={cons}/>
-      </>
+      </div>
 
     )
   }

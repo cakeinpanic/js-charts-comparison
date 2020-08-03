@@ -1,7 +1,9 @@
 .chart-demo {
   margin: 50px;
 }
-
+.chart-demo .chart {
+  height: 400px;
+}
 .reasons {
   display: flex;
   width: 100%;

@@ -1,13 +1,4 @@
-## amcahrts
-* Expensive(with maps even more)
-* Very customizable, not nice to read
-* framework agnostic
-* svg – SSR
 
-## recharts
-* Free
-* React only
-* svg – SSR
 
 ## https://www.chartjs.org/docs/latest/
 * canvas
@@ -18,12 +9,6 @@
 * MIT license
 * export(?) and SSR for money
 * no offset labels for pie chart 
-
-## anycharts https://www.anychart.com/
-* Paid
-* Great documentation
-* Very customizable
-* Vanilla with react adaptor
 
 
 check:
