@@ -7,6 +7,7 @@ import 'react-tabs/style/react-tabs.css'
 import { ChartJS } from './chartjs'
 import { ApexChart } from './apex'
 import { Anychart } from './anychart'
+import { ECharts } from './echarts'
 
 export const AllChartsDemo = () => {
 
@@ -14,6 +15,7 @@ export const AllChartsDemo = () => {
     <div>
       <Tabs>
         <TabList>
+          <Tab>Ecahrts</Tab>
           <Tab>Anychart</Tab>
           <Tab>Apex charts</Tab>
           <Tab>Chartjs</Tab>
@@ -21,6 +23,9 @@ export const AllChartsDemo = () => {
           <Tab>Recharts</Tab>
         </TabList>
 
+        <TabPanel>
+          <ECharts/>
+        </TabPanel>
         <TabPanel>
           <Anychart/>
         </TabPanel>

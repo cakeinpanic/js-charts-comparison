@@ -9,7 +9,6 @@
 * React only
 * svg – SSR
 
-
 ## https://www.chartjs.org/docs/latest/
 * canvas
 * there is a react wrapper(can be trusted?)
