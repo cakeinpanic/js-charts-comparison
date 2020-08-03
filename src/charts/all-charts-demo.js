@@ -13,6 +13,7 @@ export const AllChartsDemo = () => {
 
   return (
     <div>
+      <h1>Javascript chart libraries comparison</h1>
       <Tabs>
         <TabList>
           <Tab>Ecahrts</Tab>

@@ -16,3 +16,7 @@ a, a:active, a:hover, a:visited {
 .reason-list {
   width: 50%;
 }
+
+h1 {
+  margin-left: 10px;
+}
