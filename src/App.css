@@ -1,3 +1,12 @@
 .chart-demo {
   margin: 50px;
 }
+
+.reasons {
+  display: flex;
+  width: 100%;
+}
+
+.reason-list {
+  width: 50%;
+}
