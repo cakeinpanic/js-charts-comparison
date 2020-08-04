@@ -8,44 +8,40 @@ import { ApexChart } from '../charts/apex'
 import { ChartJS } from '../charts/chartjs'
 import Amacharts from '../charts/amcharts'
 import Rechart from '../charts/recahrts'
+import { Chartist } from '../charts/chartist'
 
 export const AllChartsDemo = () => {
-
+  const demos = [
+    {
+      name: 'Chartist',
+      component: <Chartist/>
+    }, {
+      name: 'Ecahrts',
+      component: <ECharts/>
+    }, {
+      name: 'Apex',
+      component: <ApexChart/>
+    }, {
+      name: 'Anychart',
+      component: <Anychart/>
+    }, {
+      name: 'Chartjs',
+      component: <ChartJS/>
+    }, {
+      name: 'Amcharts',
+      component: <Amacharts/>
+    }, {
+      name: 'Recharts',
+      component: <Rechart/>
+    }]
   return (
     <div>
       <h1>Javascript chart libraries comparison</h1>
       <Tabs>
         <TabList>
-          <Tab>Ecahrts</Tab>
-          <Tab>Anychart</Tab>
-          <Tab>Apex charts</Tab>
-          <Tab>Chartjs</Tab>
-          <Tab>Amcharts</Tab>
-          <Tab>Recharts</Tab>
+          {demos.map(({ name }) => (<Tab key={name} >{name}</Tab>))}
         </TabList>
-
-        <TabPanel>
-          <ECharts/>
-        </TabPanel>
-        <TabPanel>
-          <Anychart/>
-        </TabPanel>
-        <TabPanel>
-          <ApexChart/>
-        </TabPanel>
-
-        <TabPanel>
-          <ChartJS/>
-        </TabPanel>
-
-        <TabPanel>
-         <Amacharts/>
-        </TabPanel>
-
-        <TabPanel>
-          <Rechart/>
-        </TabPanel>
-
+        {demos.map(({ component },i) => (<TabPanel key={i}>{component}</TabPanel>))}
       </Tabs>
     </div>
   )
