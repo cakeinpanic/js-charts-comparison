@@ -5,6 +5,7 @@ import { ProsCons } from '../utils/pros-cons'
 
 const cons = ['Paid']
 const pros = [
+  'SVG',
   'Great documentation',
   'Very customizable',
   'Vanilla with official react adaptor'

@@ -3,7 +3,7 @@ import ReactApexChart from 'react-apexcharts'
 import { COLORS, DEFAULT_DATA } from '../data'
 import { ProsCons } from '../utils/pros-cons'
 
-const pros = ['Free', 'Vanilla with react adaptor']
+const pros = ['Free', 'SVG', 'Vanilla with react adaptor']
 const cons = [
   'export(?) and SSR for money',
   'Hardly customizable(no offset labels for pie chart for example)'
@@ -15,7 +15,6 @@ export class ApexChart extends Component {
     super(props)
 
     this.state = {
-
       series: DEFAULT_DATA.map(({ litres }) => litres),
       options: {
         fill: {
@@ -35,11 +34,22 @@ export class ApexChart extends Component {
             enabled: false,
           }
         },
+        tooltip: {
+          fillSeriesColor: true
+        },
         dataLabels: {
+          textAnchor: 'end',
+          distributed: true,
+          offsetX: '50px',
+          style: {
+            fontSize: "15px",
+            colors: ['white']
+          },
           dropShadow: {
-            enabled: false
+            enabled: true
           }
         },
+        legend: { labels:{ colors: COLORS }, markers: {fillColors:COLORS}},
         labels: DEFAULT_DATA.map(({ country }) => country)
       }
 

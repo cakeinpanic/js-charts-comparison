@@ -3,11 +3,18 @@ body {
 }
 
 .chart-demo {
-  margin: 50px;
+  margin: 50px auto;
+  width: 800px;
 }
 .chart-demo .chart {
   height: 400px;
 }
+
+.react-tabs__tab-list {
+  display: flex;
+  justify-content: center;
+}
+
 .reasons {
   display: flex;
   width: 100%;

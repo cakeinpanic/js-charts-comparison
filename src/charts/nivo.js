@@ -6,7 +6,7 @@ import { ProsCons } from '../utils/pros-cons'
 const pros = ['Free', 'SVG/Canvas', 'Good documentation with a playground', 'Customizable']
 const cons = ['React only(but not complicated to migrate to any framework-agnostic solution)']
 
-export const Nivo = ({}) => {
+export const Nivo = () => {
   const options = {
     data: DEFAULT_DATA.map(({ country, litres }) => ({ id: country, value: litres })),
     margin: { top: 40, right: 200, bottom: 40, left: 80 },

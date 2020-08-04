@@ -6,7 +6,7 @@ import { COLORS, DEFAULT_DATA } from '../data'
 import { ProsCons } from '../utils/pros-cons'
 
 am4core.useTheme(am4themes_animated)
-const pros = ['Very customizable', 'svg – SSR', 'Framework agnostic, has official react wrapper']
+const pros = ['Very customizable', 'SVG', 'Framework agnostic, has official react wrapper']
 const cons = ['Expensive(with maps even more)', 'Declarative: not nice to read or move from it to another library']
 
 class Amacharts extends Component {

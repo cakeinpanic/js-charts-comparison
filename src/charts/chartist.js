@@ -8,7 +8,7 @@ import 'react-chartist/'
 
 const pros = [
   'Free',
-  'SVG – SSR',
+  'SVG',
   'Very customisable(gives access to full control of SVG)',
   'Framework agnostic with a react wrapper'
 ]
