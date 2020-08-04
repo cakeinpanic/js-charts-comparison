@@ -8,7 +8,6 @@ const pros = [
   'Framework agnostic with a react wrapper(even react native wrapper)',
   'very customizable',
   'wonderful documentation',
-  'Maintained actively(aug 2020)',
   'Has ability to work with maps',
   'Used by gitlab: https://about.gitlab.com/blog/2019/09/30/why-we-chose-echarts/']
 const cons = ['canvas', 'react wrapper is maintained not by owners of library']

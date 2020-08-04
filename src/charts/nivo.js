@@ -1,20 +1,20 @@
-import { ResponsivePieCanvas } from '@nivo/pie'
+import { ResponsivePie } from '@nivo/pie'
 import React from 'react'
-import { DEFAULT_DATA } from '../data'
+import { COLORS, DEFAULT_DATA } from '../data'
 import { ProsCons } from '../utils/pros-cons'
 
-const pros = ['Free']
-const cons = ['React only', 'Well customizable']
+const pros = ['Free', 'SVG/Canvas', 'Good documentation with a playground', 'Customizable']
+const cons = ['React only(but not complicated to migrate to any framework-agnostic solution)']
 
 export const Nivo = ({}) => {
   const options = {
     data: DEFAULT_DATA.map(({ country, litres }) => ({ id: country, value: litres })),
     margin: { top: 40, right: 200, bottom: 40, left: 80 },
     pixelRatio: 2,
-    innerRadius: 0.5,
+    innerRadius: 0.8,
     padAngle: 0.7,
-    cornerRadius: 3,
-    colors: { scheme: 'paired' },
+    cornerRadius: 0,
+    colors: COLORS,
     borderColor: { from: 'color', modifiers: [['darker', 0.6]] },
     radialLabelsSkipAngle: 10,
     radialLabelsTextXOffset: 6,
@@ -25,7 +25,8 @@ export const Nivo = ({}) => {
     radialLabelsLinkStrokeWidth: 1,
     radialLabelsLinkColor: { from: 'color' },
     slicesLabelsSkipAngle: 10,
-    slicesLabelsTextColor: '#333333',
+    slicesLabelsTextColor: 'white',
+    enableSlicesLabels: false,
     animate: true,
     motionStiffness: 90,
     motionDamping: 15,
@@ -48,57 +49,6 @@ export const Nivo = ({}) => {
         lineWidth: 6,
         spacing: 10
       }],
-    fill: [
-      {
-        match: {
-          id: 'ruby'
-        },
-        id: 'dots'
-      },
-      {
-        match: {
-          id: 'c'
-        },
-        id: 'dots'
-      },
-      {
-        match: {
-          id: 'go'
-        },
-        id: 'dots'
-      },
-      {
-        match: {
-          id: 'python'
-        },
-        id: 'dots'
-      },
-      {
-        match: {
-          id: 'scala'
-        },
-        id: 'lines'
-      },
-      {
-        match: {
-          id: 'lisp'
-        },
-        id: 'lines'
-      },
-      {
-        match: {
-          id: 'elixir'
-        },
-        id: 'lines'
-      },
-      {
-        match: {
-          id: 'javascript'
-        },
-        id: 'lines'
-      }
-
-    ],
     legends: [
       {
         anchor: 'right',
@@ -113,10 +63,11 @@ export const Nivo = ({}) => {
     ]
   }
 
-  return (<div className="chart-demo">
+  return (
+    <div className="chart-demo">
       <a href="https://nivo.rocks" target="_blank" rel="noopener noreferrer"><h3>Nivo (7.4K🌟)</h3></a>
       <div style={{ height: 350, width: '100%' }}>
-        <ResponsivePieCanvas {...options}/>
+        <ResponsivePie {...options}/>
       </div>
       <ProsCons cons={cons} pros={pros}></ProsCons>
     </div>

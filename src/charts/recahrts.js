@@ -5,7 +5,7 @@ import { ProsCons } from '../utils/pros-cons'
 
 const RADIAN = Math.PI / 180
 
-const pros = ['Free', 'svg – SSR']
+const pros = ['Free', 'svg(SSR can be used)']
 const cons = ['React only', 'Well customizable']
 
 

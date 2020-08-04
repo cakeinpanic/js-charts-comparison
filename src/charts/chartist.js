@@ -9,13 +9,14 @@ import 'react-chartist/'
 const pros = [
   'Free',
   'SVG – SSR',
-  'Very customisable',
+  'Very customisable(gives access to full control of SVG)',
   'Framework agnostic with a react wrapper'
 ]
+
 const cons = [
   'React wrapper is maintained not by owners of library',
   'Documentation is bad',
-  'All additions are opensource plugins with doubted support',
+  'All additions(legend, tooltip, interactivity) are opensource plugins with doubted support',
   'To customise sometimes need to dive into SVG']
 
 export const Chartist = () => {
