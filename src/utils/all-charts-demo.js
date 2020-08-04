@@ -2,12 +2,12 @@ import React from 'react'
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
 
 import 'react-tabs/style/react-tabs.css'
-import { ECharts } from './echarts'
-import { Anychart } from './anychart'
-import { ApexChart } from './apex'
-import { ChartJS } from './chartjs'
-import Amacharts from './amcharts'
-import Rechart from './recahrts'
+import { ECharts } from '../charts/echarts'
+import { Anychart } from '../charts/anychart'
+import { ApexChart } from '../charts/apex'
+import { ChartJS } from '../charts/chartjs'
+import Amacharts from '../charts/amcharts'
+import Rechart from '../charts/recahrts'
 
 export const AllChartsDemo = () => {
 

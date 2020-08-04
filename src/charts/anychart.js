@@ -1,13 +1,13 @@
 import React, { PureComponent } from 'react'
 import AnyChart from 'anychart-react/dist/anychart-react.js'
 import { COLORS, DEFAULT_DATA } from '../data'
-import { ProsCons } from './pros-cons'
+import { ProsCons } from '../utils/pros-cons'
 
 const cons = ['Paid']
 const pros = [
   'Great documentation',
   'Very customizable',
-  'Vanilla with react adaptor(official?)'
+  'Vanilla with official react adaptor'
 ]
 
 export class Anychart extends PureComponent {

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Doughnut } from 'react-chartjs-2'
 import { COLORS, DEFAULT_DATA } from '../data'
-import { ProsCons } from './pros-cons'
+import { ProsCons } from '../utils/pros-cons'
 
 const pros = ['Free', 'framework agnostic with a react wrapper']
 const cons = ['Hardly customizable(no possibility to add labels to each part)', 'canvas', 'react wrapper maintained not by devs of charts itself']

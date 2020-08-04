@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactApexChart from 'react-apexcharts'
 import { COLORS, DEFAULT_DATA } from '../data'
-import { ProsCons } from './pros-cons'
+import { ProsCons } from '../utils/pros-cons'
 
 const pros = ['Free(MIT)', 'Vanilla with react adaptor']
 const cons = [

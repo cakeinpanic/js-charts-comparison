@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import { Cell, Legend, Pie, PieChart } from 'recharts'
 import { COLORS, DEFAULT_DATA } from '../data'
-import { ProsCons } from './pros-cons'
+import { ProsCons } from '../utils/pros-cons'
 
 const RADIAN = Math.PI / 180
 
