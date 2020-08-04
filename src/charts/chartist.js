@@ -6,13 +6,17 @@ import LegendPlugin from 'chartist-plugin-legend'
 import HoverPlugin from 'chartist-hover'
 import 'react-chartist/'
 
-
 const pros = [
   'Free',
+  'SVG – SSR',
   'Very customisable',
   'Framework agnostic with a react wrapper'
 ]
-const cons = ['React wrapper is maintained not by owners of library', 'Documentation is bad', 'All additions are opensource plugins with doubted support', 'To customise sometimes need to dive into SVG']
+const cons = [
+  'React wrapper is maintained not by owners of library',
+  'Documentation is bad',
+  'All additions are opensource plugins with doubted support',
+  'To customise sometimes need to dive into SVG']
 
 export const Chartist = () => {
   const data = {
@@ -48,7 +52,7 @@ export const Chartist = () => {
   }
   return (
     <div className="chart-demo">
-      <a href="https://gionkunz.github.io/chartist-js/" target="_blank" rel="noopener noreferrer"><h3>Chartist 12.3K🌟</h3></a>
+      <a href="https://gionkunz.github.io/chartist-js/" target="_blank" rel="noopener noreferrer"><h3>Chartist (12.3K🌟)</h3></a>
       <ChartistGraph data={data} options={options} listener={listener} type="Pie"/>
       <ProsCons cons={cons} pros={pros}/>
     </div>)

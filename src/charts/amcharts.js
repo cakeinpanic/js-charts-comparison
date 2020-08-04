@@ -45,7 +45,7 @@ class Amacharts extends Component {
   render () {
     return (
       <div className="chart-demo">
-        <a href="https://www.amcharts.com/" target="_blank" rel="noopener noreferrer"><h3>Amcharts</h3></a>
+        <a href="https://www.amcharts.com/" target="_blank" rel="noopener noreferrer"><h3>Amcharts (💵)</h3></a>
         <div id="chartdiv" style={{ width: '600px', height: '300px' }}></div>
         <ProsCons cons={cons} pros={pros}></ProsCons>
       </div>

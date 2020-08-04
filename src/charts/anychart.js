@@ -31,7 +31,7 @@ export class Anychart extends PureComponent {
     }
     return (
       <div className="chart-demo">
-        <a href=" https://www.anychart.com/" target="_blank" rel="noopener noreferrer"><h3>Anycharts</h3></a>
+        <a href=" https://www.anychart.com/" target="_blank" rel="noopener noreferrer"><h3>Anycharts  (💵)</h3></a>
         <AnyChart
           {...complexSettings}
         />

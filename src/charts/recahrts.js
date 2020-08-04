@@ -54,11 +54,11 @@ export default class Rechart extends PureComponent {
 
     return (
       <div className="chart-demo">
-        <a href="https://recharts.org/" target="_blank" rel="noopener noreferrer"><h3>Recharts</h3></a>
-        <PieChart width={800} height={350}>
+        <a href="https://recharts.org/" target="_blank" rel="noopener noreferrer"><h3>Recharts (14.5K🌟)</h3></a>
+        <PieChart width={500} height={300}>
           <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}/>
 
-          <Pie data={this.data} dataKey="litres" nameKey="country" cx={200} cy={200} innerRadius={70} outerRadius={90} fill="#82ca9d" label={renderCustomizedLabel}>
+          <Pie data={this.data} dataKey="litres" nameKey="country" innerRadius={70} outerRadius={90} fill="#82ca9d" label={renderCustomizedLabel}>
             {
               this.data.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={this.colors[index]}/>
