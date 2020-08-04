@@ -26,7 +26,7 @@ export const Chartist = () => {
   const options = {
     donut: true,
     height: 300,
-    donutWidth: 30,
+    donutWidth: 20,
     donutSolid: true,
     startAngle: 270,
     showLabel: true,

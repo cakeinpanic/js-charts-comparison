@@ -51,7 +51,7 @@ export class ApexChart extends Component {
       <div className="chart-demo">
         <a href="https://apexcharts.com/javascript-chart-demos/" target="_blank" rel="noopener noreferrer"><h3>Apex charts (9.2K🌟)</h3></a>
       <div id="chart">
-        <ReactApexChart options={this.state.options} series={this.state.series} type={this.state.options.chart.type} height={350}/>
+        <ReactApexChart options={this.state.options} series={this.state.series} type={this.state.options.chart.type} height={250}/>
       </div>
         <ProsCons cons={cons} pros={pros}></ProsCons>
       </div>

@@ -1,3 +1,7 @@
+body {
+  background: aliceblue
+}
+
 .chart-demo {
   margin: 50px;
 }
@@ -13,6 +17,9 @@ a, a:active, a:hover, a:visited {
   color: black
 }
 
+.recharts-wrapper {
+  margin: 0 auto;
+}
 .reason-list {
   width: 50%;
 }
