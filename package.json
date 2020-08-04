@@ -2,6 +2,7 @@
   "name": "chart",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cakeinpanic.github.io/js-charts-comparison/",
   "dependencies": {
     "@amcharts/amcharts4": "^4.9.34",
     "@babel/core": "7.9.0",
