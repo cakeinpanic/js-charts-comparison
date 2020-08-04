@@ -9,10 +9,14 @@ import { ChartJS } from '../charts/chartjs'
 import Amacharts from '../charts/amcharts'
 import Rechart from '../charts/recahrts'
 import { Chartist } from '../charts/chartist'
+import { Nivo } from '../charts/nivo'
 
 export const AllChartsDemo = () => {
   const demos = [
     {
+      name: 'Nivo',
+      component: <Nivo/>
+    }, {
       name: 'Chartist',
       component: <Chartist/>
     }, {

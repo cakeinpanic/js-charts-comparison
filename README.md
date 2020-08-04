@@ -1,10 +1,10 @@
 ### check:
-https://www.koolchart.com/
-https://canvasjs.com/javascript-charts/
-https://www.syncfusion.com/javascript-ui-controls/js-charts
-https://gionkunz.github.io/chartist-js/
+https://www.koolchart.com/ (paid)
+https://canvasjs.com/javascript-charts/ (paid)
+https://www.syncfusion.com/javascript-ui-controls/js-charts (paid)
+
+### maps
 https://github.com/mapbox/mapbox-gl-js
-https://github.com/plouc/nivo
 
 ### Does not fit
 Too simple visually: 
