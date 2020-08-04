@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  background: aliceblue
+}
+
+.chart-demo {
+  margin: 50px auto;
+  width: 800px;
+}
+.chart-demo .chart {
+  height: 400px;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  justify-content: center;
+}
+
+.reasons {
+  display: flex;
+  width: 100%;
+}
+
+a, a:active, a:hover, a:visited {
+  color: black
+}
+
+.recharts-wrapper {
+  margin: 0 auto;
+}
+.reason-list {
+  width: 50%;
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+
+.ct-legend {
+  position: relative;
+  z-index: 10;
+}
+
+li {
+  position: relative;
+  padding-left: 23px;
+  margin-bottom: 3px;
+}
+
+li:before {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  content: '';
+  border: 3px solid transparent;
+  border-radius: 2px;
+}
+
+li.inactive:before {
+  background: transparent;
+}
+
+.ct-legend-inside {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ct-chart {
+  position: relative;
+}
+
+
+
+/*# sourceMappingURL=main.58379c66.chunk.css.map*/
