@@ -65,7 +65,7 @@ export const Nivo = ({}) => {
 
   return (
     <div className="chart-demo">
-      <a href="https://nivo.rocks" target="_blank" rel="noopener noreferrer"><h3>Nivo (7.4K🌟)</h3></a>
+      <a href="https://nivo.rocks" target="_blank" rel="noopener noreferrer"><h3>Nivo (7.4K★)</h3></a>
       <div style={{ height: 350, width: '100%' }}>
         <ResponsivePie {...options}/>
       </div>

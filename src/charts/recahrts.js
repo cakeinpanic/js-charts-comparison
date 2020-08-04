@@ -54,7 +54,7 @@ export default class Rechart extends PureComponent {
 
     return (
       <div className="chart-demo">
-        <a href="https://recharts.org/" target="_blank" rel="noopener noreferrer"><h3>Recharts (14.5K🌟)</h3></a>
+        <a href="https://recharts.org/" target="_blank" rel="noopener noreferrer"><h3>Recharts (14.5K★)</h3></a>
         <PieChart width={500} height={300}>
           <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}/>
 
