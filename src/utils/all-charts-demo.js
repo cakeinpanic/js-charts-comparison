@@ -10,10 +10,15 @@ import Amacharts from '../charts/amcharts'
 import Rechart from '../charts/recahrts'
 import { Chartist } from '../charts/chartist'
 import { Nivo } from '../charts/nivo'
+import { Highchart} from '../charts/highcharts'
+
 
 export const AllChartsDemo = () => {
   const demos = [
     {
+      name: 'Highcharts',
+      component: <Highchart/>
+    }, {
       name: 'Nivo',
       component: <Nivo/>
     }, {
