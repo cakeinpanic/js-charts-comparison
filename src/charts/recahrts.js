@@ -5,8 +5,8 @@ import { ProsCons } from '../utils/pros-cons'
 
 const RADIAN = Math.PI / 180
 
-const pros = ['Free', 'svg']
-const cons = ['React only', 'Well customizable']
+const pros = ['Free', 'svg', 'Well customizable']
+const cons = ['React only']
 
 
 const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
@@ -21,33 +21,34 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
   )
 }
 
+
 export default class Rechart extends PureComponent {
   data = DEFAULT_DATA
   colors = COLORS
 
-  state = {
-    opacity: {
-      uv: 1,
-      pv: 1
-    }
-  }
+  state = {}
 
-  handleMouseEnter = (o) => {
-    const { dataKey } = o
-    const { opacity } = this.state
-
+  handleMouseEnter = (value) => {
     this.setState({
-      opacity: { ...opacity, [dataKey]: 0.5 }
+      [value]: true
     })
   }
 
-  handleMouseLeave = (o) => {
-    const { dataKey } = o
-    const { opacity } = this.state
-
+  handleMouseLeave = (value) => {
     this.setState({
-      opacity: { ...opacity, [dataKey]: 1 }
+      [value]: false
     })
+  }
+
+  options = {
+    data: this.data,
+    dataKey: 'litres',
+    nameKey: 'country',
+    innerRadius: 70,
+    isAnimationActive: false,
+    outerRadius: 90,
+    fill: '#82ca9d',
+    label: renderCustomizedLabel
   }
 
   render () {
@@ -56,13 +57,16 @@ export default class Rechart extends PureComponent {
       <div className="chart-demo">
         <a href="https://recharts.org/" target="_blank" rel="noopener noreferrer"><h3>Recharts (14.5K★)</h3></a>
         <PieChart width={500} height={300}>
-          <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}/>
+          <Legend onMouseEnter={(o) => this.handleMouseEnter(o.value)} onMouseLeave={(o) => this.handleMouseLeave(o.value)}/>
 
-          <Pie data={this.data} dataKey="litres" nameKey="country" innerRadius={70} outerRadius={90} fill="#82ca9d" label={renderCustomizedLabel}>
+          <Pie {...this.options}>
             {
-              this.data.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={this.colors[index]}/>
-              ))
+              this.data.map(({ country }, index) => {
+                const opacity = this.state[country] ? 1 : .5
+                const style = this.state[country] ? { transform: 'scale(1.01)' } : null
+                return <Cell key={`cell-${index}`} fill={this.colors[index]} fillOpacity={opacity} style={style} onMouseEnter={() => this.handleMouseEnter(country)}
+                             onMouseLeave={() => this.handleMouseLeave(country)}/>
+              })
             }
           </Pie>
 

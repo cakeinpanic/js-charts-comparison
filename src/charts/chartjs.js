@@ -8,7 +8,7 @@ const pros = ['Free', 'framework agnostic with a react wrapper']
 const cons = ['Hardly customizable(no possibility to add labels to each part)', 'canvas', 'react wrapper maintained not by devs of charts itself']
 
 export const ChartJS = () => {
-// And for a doughnut chart
+
   const options = { cutoutPercentage: 90 }
   const data = {
     labels: DEFAULT_DATA.map(({ country }) => country),
